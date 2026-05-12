@@ -58,9 +58,18 @@ a:hover {
   line-height: 1.25;
 }
 
+.intro {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .bio {
   margin: 0 0 14px;
   color: var(--muted);
+  font-size: 17px;
 }
 
 .profile-link {
