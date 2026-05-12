@@ -5,122 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Selected open-source maintenance work by apples-kksk: focused fixes for RVM and pass-js."
+      content="Selected open-source maintenance work by apples-kksk."
     />
-    <title>apples-kksk | Open-source maintenance</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>apples-kksk</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="hero" aria-labelledby="page-title">
-        <div class="hero-copy">
-          <p class="eyebrow">apples-kksk</p>
-          <h1 id="page-title">Small, verified fixes for open-source maintainers.</h1>
-          <p class="lede">
-            I focus on issue-driven maintenance work: reproducing failures, keeping patches narrow,
-            following repository templates, and documenting validation clearly before review.
+    <main class="page">
+      <aside class="profile">
+        <img class="avatar" src="assets/apple-pixel-avatar.png" alt="apples-kksk avatar" />
+        <h1>apples-kksk</h1>
+        <p class="bio">
+          Focused open-source maintenance: small patches, concrete validation, and clear review notes.
+        </p>
+        <a class="profile-link" href="https://github.com/apples-kksk">@apples-kksk</a>
+      </aside>
+
+      <section class="content" aria-labelledby="work-title">
+        <header class="header">
+          <h2 id="work-title">Selected work</h2>
+          <p>
+            Two accepted contributions, shown with the same facts a maintainer would care about:
+            repository, issue, outcome, and review context.
           </p>
-          <div class="hero-actions" aria-label="Profile links">
-            <a class="button primary" href="https://github.com/apples-kksk">GitHub profile</a>
-            <a class="button ghost" href="#work">Selected work</a>
+        </header>
+
+        <article class="repo-card">
+          <div class="repo-heading">
+            <h3><a href="https://github.com/rvm/rvm">rvm/rvm</a></h3>
+            <span class="badge">Merged</span>
           </div>
-        </div>
+          <p class="repo-meta">Shell · Ruby enVironment Manager (RVM)</p>
+          <p>
+            Fixed RubyGems selection for older Ruby installs by keeping Ruby 1.9 on a compatible
+            RubyGems version instead of selecting a newer incompatible default.
+          </p>
+          <ul class="links">
+            <li><a href="https://github.com/rvm/rvm/pull/5654">Pull request #5654</a></li>
+            <li><a href="https://github.com/rvm/rvm/issues/4690">Issue #4690</a></li>
+          </ul>
+        </article>
 
-        <div class="avatar-card" aria-label="Pixel apple avatar">
-          <div class="pixel-frame">
-            <img src="assets/apple-pixel-avatar.png" alt="Pixel apple avatar for apples-kksk" />
+        <article class="repo-card">
+          <div class="repo-heading">
+            <h3><a href="https://github.com/tinovyatkin/pass-js">tinovyatkin/pass-js</a></h3>
+            <span class="badge released">Released</span>
           </div>
-          <p class="avatar-caption">Focused patches. Concrete verification. No noise.</p>
-        </div>
-      </header>
+          <p class="repo-meta">TypeScript · Apple Wallet Passes generating library for Node.js</p>
+          <p>
+            Implemented semantic tag support for Wallet passes. The maintainer applied the work and
+            shipped it in the project's v7.0.0 release.
+          </p>
+          <ul class="links">
+            <li><a href="https://github.com/tinovyatkin/pass-js/pull/657">Pull request #657</a></li>
+            <li><a href="https://github.com/tinovyatkin/pass-js/releases/tag/v7.0.0">Release v7.0.0</a></li>
+          </ul>
+        </article>
 
-      <main>
-        <section class="section-intro" id="work" aria-labelledby="work-title">
-          <p class="section-kicker">Selected accepted work</p>
-          <h2 id="work-title">Two repositories, two maintenance outcomes.</h2>
-        </section>
-
-        <section class="work-grid" aria-label="Selected repositories">
-          <article class="project-card rvm-card">
-            <div class="project-topline">
-              <span class="project-type">Shell</span>
-              <span class="status merged">Merged</span>
-            </div>
-            <h3>rvm/rvm</h3>
-            <p class="repo-description">Ruby enVironment Manager, used to install and switch Ruby versions.</p>
-            <p>
-              Fixed RubyGems selection for older Ruby installs by keeping Ruby 1.9 on a compatible
-              RubyGems line instead of selecting a newer incompatible default.
-            </p>
-            <dl class="facts">
-              <div>
-                <dt>Repository</dt>
-                <dd><a href="https://github.com/rvm/rvm">github.com/rvm/rvm</a></dd>
-              </div>
-              <div>
-                <dt>Accepted PR</dt>
-                <dd><a href="https://github.com/rvm/rvm/pull/5654">rvm/rvm#5654</a></dd>
-              </div>
-              <div>
-                <dt>Issue</dt>
-                <dd><a href="https://github.com/rvm/rvm/issues/4690">rvm/rvm#4690</a></dd>
-              </div>
-            </dl>
-          </article>
-
-          <article class="project-card pass-card">
-            <div class="project-topline">
-              <span class="project-type">TypeScript</span>
-              <span class="status released">Released</span>
-            </div>
-            <h3>tinovyatkin/pass-js</h3>
-            <p class="repo-description">Apple Wallet Passes generating library for Node.js.</p>
-            <p>
-              Implemented semantic tag support for Wallet passes. The work was applied by the
-              maintainer and shipped in the project's v7.0.0 release.
-            </p>
-            <dl class="facts">
-              <div>
-                <dt>Repository</dt>
-                <dd><a href="https://github.com/tinovyatkin/pass-js">github.com/tinovyatkin/pass-js</a></dd>
-              </div>
-              <div>
-                <dt>Applied PR</dt>
-                <dd><a href="https://github.com/tinovyatkin/pass-js/pull/657">tinovyatkin/pass-js#657</a></dd>
-              </div>
-              <div>
-                <dt>Release</dt>
-                <dd><a href="https://github.com/tinovyatkin/pass-js/releases/tag/v7.0.0">v7.0.0</a></dd>
-              </div>
-            </dl>
-          </article>
-        </section>
-
-        <section class="process-panel" aria-labelledby="process-title">
-          <div>
-            <p class="section-kicker">Review discipline</p>
-            <h2 id="process-title">How I prepare a contribution.</h2>
-          </div>
-          <ol class="process-list">
-            <li>Start from the repository's issue, PR template, and contribution rules.</li>
+        <section class="process" aria-labelledby="process-title">
+          <h2 id="process-title">Contribution process</h2>
+          <ul>
+            <li>Read the issue, repository template, and contribution rules first.</li>
             <li>Keep the patch scoped to the reported behavior.</li>
-            <li>Add focused regression coverage when the project has a practical test path.</li>
-            <li>Write concrete validation notes instead of vague claims.</li>
-            <li>Compare the final PR against the issue requirements before submitting.</li>
-          </ol>
+            <li>Document reproduction or validation steps concretely.</li>
+            <li>Check the final PR against the issue requirements before submission.</li>
+          </ul>
         </section>
-      </main>
-
-      <footer class="site-footer">
-        <span>apples-kksk</span>
-        <a href="https://github.com/apples-kksk">github.com/apples-kksk</a>
-      </footer>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
