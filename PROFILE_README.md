@@ -1,0 +1,27 @@
+# Hi there, I am apples-kksk.
+
+I am a Linux user who works on small, practical fixes for open-source projects.
+
+## Selected work
+
+### rvm/rvm
+
+Ruby enVironment Manager (RVM)
+
+- Language: Shell
+- Outcome: merged
+- PR: https://github.com/rvm/rvm/pull/5654
+- Issue: https://github.com/rvm/rvm/issues/4690
+
+Fixed RubyGems selection for older Ruby installs by keeping Ruby 1.9 on a compatible RubyGems version instead of selecting a newer incompatible default.
+
+### tinovyatkin/pass-js
+
+Apple Wallet Passes generating library for Node.js
+
+- Language: TypeScript
+- Outcome: applied and released in v7.0.0
+- PR: https://github.com/tinovyatkin/pass-js/pull/657
+- Release: https://github.com/tinovyatkin/pass-js/releases/tag/v7.0.0
+
+Implemented semantic tag support for Wallet passes. The maintainer applied the work and shipped it in the project's v7.0.0 release.
