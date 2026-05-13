@@ -25,3 +25,14 @@ Apple Wallet Passes generating library for Node.js
 - Release: https://github.com/tinovyatkin/pass-js/releases/tag/v7.0.0
 
 Implemented semantic tag support for Wallet passes. The maintainer applied the work and shipped it in the project's v7.0.0 release.
+
+### timqian/chart.xkcd
+
+xkcd styled chart library
+
+- Language: JavaScript
+- Outcome: merged
+- PR: https://github.com/timqian/chart.xkcd/pull/105
+- Issue: https://github.com/timqian/chart.xkcd/issues/22
+
+Added a combined chart type that renders bar and line datasets together on one shared axis, with documentation and an example page entry.
