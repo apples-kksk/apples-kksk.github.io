@@ -37,17 +37,6 @@ Ruby enVironment Manager (RVM)
 
 Fixed RubyGems selection for older Ruby installs by keeping Ruby 1.9 on a compatible RubyGems version instead of selecting a newer incompatible default.
 
-### dennishenle/zeitlupius
-
-CLI time reporting tool
-
-- Language: Rust
-- Outcome: merged
-- PR: https://github.com/dennishenle/zeitlupius/pull/13
-- Issue: https://github.com/dennishenle/zeitlupius/issues/11
-
-Aligned report time columns by computing widths from all rows and adding regression coverage that checks every report row starts its time value at the same column.
-
 ### tinovyatkin/pass-js
 
 Apple Wallet Passes generating library for Node.js
